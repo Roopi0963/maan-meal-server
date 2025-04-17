@@ -1,6 +1,6 @@
 export const login = async (email, password) => {
   try {
-    const response = await fetch("http://localhost:8080/api/auth/login", {
+    const response = await fetch("https://maan-meal-app.onrender.com/api/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),
@@ -20,7 +20,7 @@ export const login = async (email, password) => {
 
 export const signup = async (formData) => {
   try {
-    const response = await fetch("http://localhost:8080/api/user/signup", {
+    const response = await fetch("https://maan-meal-app.onrender.com/api/user/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
